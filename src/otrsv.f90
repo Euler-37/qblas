@@ -1,4 +1,4 @@
-subroutine ztrsv(uplo,trans,diag,n,a,lda,x,incx)
+subroutine otrsv(uplo,trans,diag,n,a,lda,x,incx)
 
 ! code converted using to_f90 by alan miller
 ! date: 2021-09-18  time: 18:57:37
@@ -23,7 +23,7 @@ integer, intent(in)                      :: incx
 !  purpose
 !  =======
 
-!  ztrsv  solves one of the systems of equations
+!  otrsv  solves one of the systems of equations
 
 !     a*x = b,   or   a**t*x = b,   or   a**h*x = b,
 
@@ -155,7 +155,7 @@ else if (incx == 0) then
   info = 8
 end if
 if (info /= 0) then
-  call xerbla('ztrsv ',info)
+  call xerbla('otrsv ',info)
   return
 end if
 
@@ -323,6 +323,6 @@ end if
 
 return
 
-!     end of ztrsv .
+!     end of otrsv .
 
-end subroutine ztrsv
+end subroutine otrsv
