@@ -5,10 +5,10 @@ subroutine otrmm(side,uplo,transa,diag,m,n,alpha,a,lda,b,ldb)
 
 !     .. scalar arguments ..
 
-character(len=1),intent(in)        :: side
-character(len=1),intent(in)        :: uplo
-character(len=1),intent(in)        :: transa
-character(len=1),intent(in)        :: diag
+character(len=*),intent(in)        :: side
+character(len=*),intent(in)        :: uplo
+character(len=*),intent(in)        :: transa
+character(len=*),intent(in)        :: diag
 integer, intent(in)                      :: m
 integer, intent(in)                      :: n
 complex(kind=16), intent(in)               :: alpha

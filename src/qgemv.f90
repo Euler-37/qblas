@@ -5,7 +5,7 @@ subroutine qgemv(trans,m,n,alpha,a,lda,x,incx,beta,y,incy)
 
 !     .. scalar arguments ..
 
-character(len=1),intent(in)        :: trans
+character(len=*),intent(in)        :: trans
 integer, intent(in)                      :: m
 integer, intent(in)                      :: n
 real(kind=16), intent(in)             :: alpha

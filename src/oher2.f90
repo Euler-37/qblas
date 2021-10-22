@@ -5,7 +5,7 @@ subroutine oher2(uplo,n,alpha,x,incx,y,incy,a,lda)
 
 !     .. scalar arguments ..
 
-character(len=1),intent(in)        :: uplo
+character(len=*),intent(in)        :: uplo
 integer, intent(in)                      :: n
 complex(kind=16), intent(in)               :: alpha
 complex(kind=16), intent(in)               :: x(*)

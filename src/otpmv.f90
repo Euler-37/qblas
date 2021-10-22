@@ -5,9 +5,9 @@ subroutine otpmv(uplo,trans,diag,n,ap,x,incx)
 
 !     .. scalar arguments ..
 
-character(len=1),intent(in)        :: uplo
-character(len=1),intent(in)        :: trans
-character(len=1),intent(in)        :: diag
+character(len=*),intent(in)        :: uplo
+character(len=*),intent(in)        :: trans
+character(len=*),intent(in)        :: diag
 integer, intent(in)                      :: n
 complex(kind=16), intent(in)               :: ap(*)
 complex(kind=16), intent(in out)           :: x(*)

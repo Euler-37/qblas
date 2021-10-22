@@ -5,9 +5,9 @@ subroutine otbmv(uplo,trans,diag,n,k,a,lda,x,incx)
 
 !     .. scalar arguments ..
 
-character(len=1),intent(in)        :: uplo
-character(len=1),intent(in)        :: trans
-character(len=1),intent(in)        :: diag
+character(len=*),intent(in)        :: uplo
+character(len=*),intent(in)        :: trans
+character(len=*),intent(in)        :: diag
 integer, intent(in)                      :: n
 integer, intent(in)                      :: k
 complex(kind=16), intent(in)               :: a(lda,*)

@@ -5,8 +5,8 @@ subroutine oher2k(uplo,trans,n,k,alpha,a,lda,b,ldb,beta,c,ldc)
 
 !     .. scalar arguments ..
 
-character(len=1),intent(in)        :: uplo
-character(len=1),intent(in)        :: trans
+character(len=*),intent(in)        :: uplo
+character(len=*),intent(in)        :: trans
 integer, intent(in)                      :: n
 integer, intent(in)                      :: k
 complex(kind=16), intent(in)               :: alpha

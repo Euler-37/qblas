@@ -5,7 +5,7 @@ subroutine ohemv(uplo,n,alpha,a,lda,x,incx,beta,y,incy)
 
 !     .. scalar arguments ..
 
-character(len=1),intent(in)        :: uplo
+character(len=*),intent(in)        :: uplo
 integer, intent(in)                      :: n
 complex(kind=16), intent(in)               :: alpha
 complex(kind=16), intent(in)               :: a(lda,*)

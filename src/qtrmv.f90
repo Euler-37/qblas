@@ -5,9 +5,9 @@ subroutine qtrmv(uplo,trans,diag,n,a,lda,x,incx)
 
 !     .. scalar arguments ..
 
-character(len=1),intent(in)        :: uplo
-character(len=1),intent(in)        :: trans
-character(len=1),intent(in)        :: diag
+character(len=*),intent(in)        :: uplo
+character(len=*),intent(in)        :: trans
+character(len=*),intent(in)        :: diag
 integer, intent(in)                      :: n
 real(kind=16), intent(in)             :: a(lda,*)
 integer, intent(in out)                  :: lda

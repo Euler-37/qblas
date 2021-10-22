@@ -5,7 +5,7 @@ subroutine ohbmv(uplo,n,k,alpha,a,lda,x,incx,beta,y,incy)
 
 !     .. scalar arguments ..
 
-character(len=1),intent(in)        :: uplo
+character(len=*),intent(in)        :: uplo
 integer, intent(in)                      :: n
 integer, intent(in)                      :: k
 complex(kind=16), intent(in)               :: alpha

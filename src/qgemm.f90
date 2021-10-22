@@ -5,8 +5,8 @@ subroutine qgemm(transa,transb,m,n,k,alpha,a,lda,b,ldb,beta,c,ldc)
 
 !     .. scalar arguments ..
 
-character(len=1),intent(in)        :: transa
-character(len=1),intent(in)        :: transb
+character(len=*),intent(in)        :: transa
+character(len=*),intent(in)        :: transb
 integer, intent(in)                      :: m
 integer, intent(in)                      :: n
 integer, intent(in)                      :: k

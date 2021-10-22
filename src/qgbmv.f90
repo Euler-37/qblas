@@ -5,7 +5,7 @@ subroutine qgbmv(trans,m,n,kl,ku,alpha,a,lda,x,incx,beta,y,incy)
 
 !     .. scalar arguments ..
 
-character(len=1),intent(in)        :: trans
+character(len=*),intent(in)        :: trans
 integer, intent(in)                      :: m
 integer, intent(in)                      :: n
 integer, intent(in out)                  :: kl

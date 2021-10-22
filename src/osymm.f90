@@ -5,8 +5,8 @@ subroutine osymm(side,uplo,m,n,alpha,a,lda,b,ldb,beta,c,ldc)
 
 !     .. scalar arguments ..
 
-character(len=1),intent(in)        :: side
-character(len=1),intent(in)        :: uplo
+character(len=*),intent(in)        :: side
+character(len=*),intent(in)        :: uplo
 integer, intent(in)                      :: m
 integer, intent(in)                      :: n
 complex(kind=16), intent(in)               :: alpha

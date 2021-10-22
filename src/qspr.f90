@@ -5,7 +5,7 @@ subroutine qspr(uplo,n,alpha,x,incx,ap)
 
     !     .. scalar arguments ..
 
-    character(len=1),intent(in)        :: uplo
+    character(len=*),intent(in)        :: uplo
     integer, intent(in)                      :: n
     real(kind=16), intent(in)             :: alpha
     real(kind=16), intent(in)             :: x(*)
